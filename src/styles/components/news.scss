@@ -1,0 +1,73 @@
+.sec-news {
+	padding: 155px 0;
+	@media (max-width: 767px) {
+		padding: 110px 0;
+	}
+	.news--wrapper {
+		display: flex;
+		@media (max-width: 767px) {
+			flex-direction: column;
+		}
+		.sec-detail {
+			flex: 0 0 33.45%;
+			max-width: 33.45%;
+			.content-box {
+				max-width: 340px;
+				@media (max-width: 1199px) {
+					max-width: 200px;
+				}
+				.sec-btn {
+					width: max-content;
+					margin-top: 56px;
+				}
+			}
+			@media (max-width: 767px) {
+				flex: 0 0 100%;
+				max-width: 100%;
+				.content-box {
+					max-width: 100%;
+					margin-bottom: 120px;
+				}
+			}
+		}
+		.sec-slider--wrapper {
+			flex: 0 0 66.55%;
+			max-width: 66.55%;
+			overflow: hidden;
+			@media (max-width: 767px) {
+				flex: 0 0 100%;
+				max-width: 100%;
+			}
+			.js-secNewsSlider {
+				padding-right: 110px;
+			}
+			.slick-list {
+				overflow: visible !important;
+				.slick-track {
+					display: flex;
+					overflow: hidden;
+					margin: 0 -40px;
+					@media (max-width: 767px) {
+						margin: 0 -20px;
+					}
+					.slick-slide {
+						padding: 0 40px;
+						opacity: 0.5;
+						transition: all 0.35s ease;
+						@media (max-width: 767px) {
+							padding: 0 20px;
+						}
+						&.slick-active {
+							opacity: 1;
+						}
+					}
+				}
+			}
+			.postBox {
+				.postDetail {
+					margin-top: 45px;
+				}
+			}
+		}
+	}
+}

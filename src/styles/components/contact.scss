@@ -1,0 +1,66 @@
+.contact-wrapper {
+	.postBox {
+		display: flex;
+		justify-content: space-between;
+		padding: 0 112px 0 0;
+		@media (max-width: 1601px) {
+			padding: 0 112px;
+		}
+		@media (max-width: 1439px) {
+			padding: 0 65px;
+		}
+		@media (max-width: 1199px) {
+			flex-direction: column;
+		}
+		@media (max-width: 991px) {
+			padding: 0;
+		}
+		.sec-content {
+			flex: 0 0 44.2%;
+			max-width: 44.2%;
+			@media (max-width: 1601px) {
+				flex: 0 0 42%;
+				max-width: 42%;
+			}
+			@media (max-width: 1199px) {
+				flex: 0 0 100%;
+				max-width: 100%;
+			}
+		}
+		.form-wrapper {
+			flex: 0 0 44.2%;
+			max-width: 44.2%;
+			background: $white;
+			padding: 24px 32px;
+			border-radius: 32px;
+			@media (max-width: 1601px) {
+				flex: 0 0 50.7%;
+				max-width: 50.7%;
+			}
+			@media (max-width: 1199px) {
+				flex: 0 0 100%;
+				max-width: 100%;
+				margin-top: 50px;
+			}
+			.form-btn {
+				display: flex;
+				align-items: center;
+				p {
+					margin-left: 32px;
+				}
+				@media (max-width: 1199px) {
+					flex-direction: column;
+					button {
+						width: 100%;
+					}
+					p {
+						margin-left: 0;
+						text-align: left;
+						width: 100%;
+						margin-top: 20px;
+					}
+				}
+			}
+		}
+	}
+}

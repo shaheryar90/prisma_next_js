@@ -1,0 +1,26 @@
+// import scss files (for Global)
+// @import "./global/fonts.scss";
+@import "./global/variables.scss";
+@import "./global/mixins.scss";
+@import "./global/global.scss";
+
+// import scss files (for Components)
+@import "components/header";
+@import "components/footer";
+@import "components/banner";
+@import "components/about";
+@import "components/form-elements";
+@import "components/contact";
+@import "components/generation";
+@import "components/news";
+@import "components/get-in-touch";
+@import "components/practice.scss";
+@import "components/main-page-section.scss";
+@import "components/contactUsForm.scss";
+@import "components/submit.scss";
+@import "components/flip-card.scss";
+
+// @import 'components/faq';
+// @import 'components/signup';
+@import "components/faq";
+@import "components/content";

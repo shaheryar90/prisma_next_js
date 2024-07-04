@@ -1,0 +1,195 @@
+.signup-wrapper {
+  padding-top: 160px;
+  padding-bottom: 124px;
+
+  @media (min-width: 999px) {
+    min-width: 555px;
+    width: auto;
+  }
+  @media #{$vpdesktop_1440} {
+    padding-top: 200px;
+    padding-bottom: 140px;
+  }
+  @media #{$vptabletP} {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  &.contact-form {
+    background-color: $white;
+    padding: 24px 0 24px 0;
+    // gap: 25px;
+    border-radius: 32px;
+    opacity: 0px;
+    @media #{$vpdesktop_1440} {
+      padding-bottom: 64px;
+    }
+    @media #{$vptabletsm} {
+      padding-top: 76px;
+      padding-bottom: 88px;
+    }
+    @media (max-width: 999px) {
+      padding: 10px 0 10px 0;
+    }
+    .form-wrapper {
+      margin-top: 0px;
+
+      max-width: 840px;
+      margin-inline: auto;
+      @media #{$vpdesktop_1440} {
+        max-width: 424px;
+      }
+      @media (max-width: 999px) {
+        max-width: 100%;
+      }
+      .form-group {
+        &:nth-last-child(2) {
+          @media #{$vptabletP} {
+            margin-bottom: 0px;
+          }
+          @media #{$vptabletsm} {
+            margin-bottom: 0px;
+          }
+        }
+        &:nth-last-child(3) {
+          @media #{$vptabletP} {
+            margin-bottom: 10px;
+          }
+          @media #{$vptabletsm} {
+            margin-bottom: 10px;
+          }
+        }
+      }
+      .form-btn {
+        display: flex;
+        align-items: center;
+        padding-top: 9px;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 32px;
+        text-align: center;
+
+        @media #{$vptabletP} {
+          padding-top: 9px;
+        }
+        @media #{$vptabletsm} {
+          padding-top: 17px;
+        }
+        .btn-text {
+          color: $black;
+          margin-left: 20px;
+          font-weight: 600px;
+        }
+        @media (max-width: 999px) {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+    }
+  }
+  .postBox {
+    display: flex;
+    justify-content: space-between;
+    .sec-content {
+      flex: 0 0 38.8%;
+      max-width: 38.8%;
+      .sc-title {
+        margin: 0 0 20px;
+      }
+      .sc-des {
+        margin: 0 0 0;
+        font-variation-settings: "wght" 200, "wdth" 67.5, "slnt" 0;
+        font-size: 24px;
+        line-height: 1.2;
+      }
+
+      @media #{$vptabletP} {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-right: 32px;
+      }
+    }
+    .sec-img {
+      flex: 0 0 38.7%;
+      max-width: 38.7%;
+      @media #{$vpdesktop_1440} {
+        flex: 0 0 49.3%;
+        max-width: 49.3%;
+      }
+      @media #{$vptabletP} {
+        display: none;
+      }
+    }
+  }
+  .form-wrapper {
+    margin-top: 88px;
+    @media #{$vptabletP} {
+      margin-top: 97px;
+    }
+    @media (max-width: 767px) {
+      margin-top: 72px;
+    }
+    .form-btn {
+      display: flex;
+      align-items: center;
+      padding-top: 9px;
+      @media #{$vptabletP} {
+        padding-top: 41px;
+      }
+    }
+    .form-group {
+      margin-bottom: 20px;
+      font-variation-settings: "wght" 300, "wdth" 67.5, "slnt" 0;
+      input {
+        font-variation-settings: inherit;
+      }
+      &:nth-last-child(2) {
+        @media #{$vptabletP} {
+          margin-bottom: 55px;
+        }
+      }
+      &:nth-last-child(3) {
+        @media #{$vptabletP} {
+          margin-bottom: 80px;
+        }
+      }
+    }
+  }
+  .checkbox-group {
+    display: flex;
+    column-gap: 55px;
+    @media #{$vpdesktop_1300} {
+      column-gap: 25px;
+    }
+    @media #{$vptabletL} {
+      column-gap: 10px;
+    }
+    @media #{$vpdesktop_1024} {
+      flex-direction: column;
+    }
+    &.checkbox-group--contact {
+      justify-content: flex-start;
+      @media #{$vpdesktop_1440} {
+        column-gap: 0;
+        justify-content: space-between;
+      }
+      @media #{$vpdesktop_1024} {
+        flex-direction: row;
+      }
+      @media #{$vptabletsm} {
+        flex-direction: column;
+      }
+    }
+    .checkBox-wrapper {
+      // @media #{$vpdesktop_1024} {
+      // 	margin-bottom: 28px;
+      // }
+      // @media #{$vptabletP} {
+      // 	margin-bottom: 55px;
+      // }
+      // &:last-child {
+      // 	margin-bottom: 0px;
+      // }
+    }
+  }
+}

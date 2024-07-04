@@ -1,0 +1,141 @@
+.tabs-wrapper {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 180px;
+	@media (max-width: 991px) {
+		margin-bottom: 120px;
+	}
+	.tabs-box {
+		flex: 0 0 32%;
+		max-width: 32%;
+		.nav-link {
+			font-size: 32px;
+			font-variation-settings: 'wght' 800, 'wdth' 50, 'slnt'-12;
+			text-transform: uppercase;
+			transition: all 0.35s ease;
+			&.active,
+			&:hover {
+				background-color: transparent;
+				color: $blue-light;
+				opacity: 1;
+			}
+			@media (max-width: 1199px) {
+				font-size: 28px;
+			}
+			@media (max-width: 991px) {
+				font-size: 24px;
+			}
+		}
+		@media (max-width: 767px) {
+			.tab--optionsBox {
+				flex-direction: row !important;
+				flex-wrap: nowrap;
+				overflow: scroll;
+				margin-bottom: 30px;
+				.nav-link {
+					font-size: 32px;
+					flex: 0 0 auto;
+					max-width: max-content;
+					padding: 25px 16px;
+					border-bottom: 1px solid #ffffff;
+					border-radius: 0;
+					&:first-child {
+						padding-left: 0;
+					}
+				}
+			}
+		}
+	}
+	.tabs-content-wrapper {
+		flex: 0 0 65%;
+		max-width: 65%;
+		.tab-pane {
+			.accordion {
+				.card {
+					background-color: transparent;
+					border: 0;
+					border-bottom: 1px solid rgba(60, 55, 55, 1);
+					padding: 16px 0;
+					&:nth-child(1) {
+						padding-top: 0;
+					}
+					.card-header {
+						background-color: transparent;
+						padding: 0;
+						.btn {
+							position: relative;
+							color: $blue-light;
+							padding: 0;
+							font-size: 24px;
+							font-variation-settings: 'wght' 500, 'wdth' 67.5,
+								'slnt' 0;
+							text-transform: initial;
+							text-align: left;
+							width: 100%;
+							justify-content: flex-start;
+							padding-right: 50px;
+							&:after {
+								content: '';
+								position: absolute;
+								right: 10px;
+								top: 20px;
+								background-image: url(../../../public/assets/img/icons/arrow-down-blue.png);
+								width: 10px;
+								height: 6px;
+								transform: rotate(180deg);
+								transition: all 0.35s ease;
+							}
+							&.collapsed {
+								color: $white;
+								text-align: left;
+								&:after {
+									content: '';
+									background-image: url(../../../public/assets/img/icons/arrow-down-white.png);
+									transform: rotate(0);
+								}
+							}
+							&:hover,
+							&:active,
+							&:focus {
+								text-decoration: none;
+							}
+						}
+					}
+					.detailBox {
+						.card-body {
+							padding: 12px 0;
+						}
+					}
+					.card-body {
+						padding: 0;
+						font-variation-settings: 'wght' 200, 'wdth' 67.5,
+							'slnt' 0;
+						font-size: 24px;
+					}
+				}
+			}
+		}
+	}
+	&.is--top {
+		.tab--optionsBox {
+			position: fixed;
+			top: 115px;
+			z-index: 1;
+			background-color: $gray;
+			@media (max-width: 767px) {
+				top: 0;
+			}
+		}
+	}
+	@media (max-width: 767px) {
+		flex-direction: column;
+		.tabs-box {
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
+		.tabs-content-wrapper {
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
+	}
+}

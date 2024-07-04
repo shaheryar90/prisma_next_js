@@ -1,0 +1,77 @@
+// Custom Variables //
+
+// English Fonts - Primary
+$primaryFont: 'Roboto';
+$secondaryFont: 'Unbounded';
+
+// arabic Fonts - Primary
+$primaryFontArabic: 'SwissraCondensed';
+$secondaryFontArabic: 'SwissraCondensed';
+
+// Animation keys
+$easeInOut: cubic-bezier(0.25, 1, 0.5, 1);
+
+//Gradient
+$gradient-linear: linear-gradient(
+	to right,
+	rgba(0, 0, 0, 0.75) 0%,
+	rgba(0, 0, 0, 0) 100%
+);
+$gradient-radial: radial-gradient(
+	farthest-corner at 72% 52%,
+	rgba(24, 24, 24, 0) 0%,
+	rgba(36, 36, 36, 1) 100%
+);
+
+// Set Colors
+$black: #000000;
+$white: #ffffff;
+$white-light: #e4e4e4;
+$gray: #161617;
+$gray-light: #7e878e;
+$gray-sty2: #0f161b;
+$blue-light: #06fff8;
+$blue-bg: #f1f7fa;
+$purple: #9900e0;
+$black-sty1: #0f0f0f;
+$placeholder-clr: $white;
+$error-clr: #ff067e;
+// Media Sizes
+$vpdesktopMin: '(min-width:2100px)';
+$vpMXdesktopMin: '(min-width: 1650px)';
+$vpdesktopMin: '(min-width:1401px)';
+$vpSmdesktop: '(max-width: 1580px)';
+$vpdesktop: '(max-width:1400px)';
+$vpdesktop_1601: '(max-width:1601px)';
+$vpdesktop_1440: '(max-width:1440px)';
+$vpdesktop_1300: '(max-width:1300px)';
+$vpdesktop_1024: '(max-width:1024px)';
+$vptabletL: '(max-width:1199px)';
+$vptabletP: '(max-width:991px)';
+$vptabletsm: '(max-width:767px)';
+$vpmobile: '(max-width:576px)';
+$vpsmmobile: '(max-width:425px)';
+$vpxsmobile: '(max-width:359px)';
+
+// orientation landscape
+$smMobileLandscape: '(max-width: 767px) and (orientation: landscape)';
+
+@media #{$vpdesktopMin} {
+}
+@media #{$vpdesktop} {
+}
+@media #{$vptabletL} {
+}
+@media #{$vptabletP} {
+}
+@media #{$vptabletsm} {
+}
+@media #{$vpmobile} {
+}
+@media #{$vpsmmobile} {
+}
+@media #{$vpxsmobile} {
+}
+
+@media #{$smMobileLandscape} {
+}

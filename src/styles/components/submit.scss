@@ -1,0 +1,214 @@
+.submit-container {
+  background-color: white;
+  padding: 40px 40px 80px 0;
+  display: flex;
+  position: relative; /* Ensure this container is positioned relatively */
+  z-index: 0;
+
+  .submit-pic-content {
+    width: 50%;
+  }
+
+  .submit-content {
+    width: 50%;
+    padding-left: 100px;
+    padding-top: 10px;
+
+    .text-style {
+      color: #9900e0;
+      font-size: 16px;
+      margin-left: 5px;
+      font-weight: bold;
+    }
+    .text-style-heading {
+      color: black;
+    }
+    .text-style-content {
+      color: black;
+      font-size: 18px;
+    }
+  }
+
+  .xl-screen,
+  .lg-screen,
+  .sm-screen {
+    display: none;
+  }
+
+  @media (min-width: 1600px) {
+    .submit-pic-content .xl-screen {
+      display: block;
+    }
+  }
+
+  @media (min-width: 900px) and (max-width: 1599px) {
+    .submit-pic-content .lg-screen {
+      display: block;
+    }
+  }
+
+  @media (max-width: 899px) {
+    flex-direction: column;
+
+    .submit-pic-content,
+    .submit-content {
+      width: 100%;
+      padding-left: 20px;
+    }
+    .sm-screen {
+      display: block;
+      padding: 10px;
+    }
+  }
+}
+
+.submit-box-container {
+  display: flex;
+
+  margin-inline: 60px;
+  // top: 2031px;
+  bottom: -120px;
+  gap: 20px;
+  position: absolute;
+  z-index: 10; /* Adjust the positioning as needed */
+  left: 0; /* Adjust the positioning as needed */
+}
+
+.submit-box-content {
+  display: flex;
+  align-items: center;
+  border-radius: 32px;
+  height: 220px;
+  box-shadow: 0px 5px 11px 0px #0000000a, 0px 20px 20px 0px #00000008,
+    0px 46px 28px 0px #00000005, 0px 81px 33px 0px #00000003,
+    0px 127px 36px 0px #00000000;
+  background-color: white;
+  padding: 0px 20px 0px 20px;
+  width: 100%; /* Default width for better control in media queries */
+  cursor: pointer;
+  position: relative; /* Ensure that the pseudo-element is positioned correctly */
+  border: 2px solid transparent; /* Default transparent border */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+
+  &:hover {
+    background-clip: padding-box; /* Ensure the background color doesn't go into the border area */
+    border: none; /* Remove the default border */
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      right: -2px;
+      bottom: -2px;
+      border-radius: inherit; /* Ensure the border radius matches the parent */
+      background: linear-gradient(90deg, #9900e0 0%, #06fff8 100%);
+      z-index: -1; /* Place it behind the content */
+    }
+
+    .text-content {
+      color: #9900e0;
+    }
+  }
+
+  &.selected {
+    background-clip: padding-box; /* Ensure the background color doesn't go into the border area */
+    border: none; /* Remove the default border */
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      right: -2px;
+      bottom: -2px;
+      border-radius: inherit; /* Ensure the border radius matches the parent */
+      background: linear-gradient(90deg, #9900e0 0%, #06fff8 100%);
+      z-index: -1; /* Place it behind the content */
+    }
+
+    .text-content {
+      color: #9900e0;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .submit-container {
+    padding: 0 0 0 0;
+  }
+  .submit-box-container {
+    position: relative;
+    flex-direction: column;
+    margin-bottom: 0px;
+    margin-inline: 20px;
+    margin-top: 20px;
+    z-index: 10;
+    top: 0;
+    .submit-box-content {
+      width: 100%;
+    }
+  }
+}
+@media (min-width: 701px) and (max-width: 900px) {
+  .submit-container {
+    padding: 0 0 0 0;
+  }
+  .submit-box-container {
+    position: relative;
+    margin-left: 80px;
+    margin-inline: 20px;
+    z-index: 10;
+    flex-wrap: wrap;
+    flex-direction: row;
+    bottom: -43px;
+
+    .submit-box-content {
+      width: 49%;
+    }
+  }
+}
+
+/* Text Styles */
+.text-heading {
+  color: #9900e0;
+  margin-left: 5px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.text-content {
+  color: black;
+  font-size: 20px;
+  margin-left: 5px;
+  font-weight: bold;
+  margin-top: 40px;
+  text-transform: capitalize;
+}
+
+/* Tablet */
+@media (min-width: 701px) and (max-width: 999px) {
+  .submit-box-container {
+    gap: 10px;
+  }
+  .submit-box-content {
+    width: 48%;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1000px) {
+  .submit-box-content {
+    width: 25%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .submit-box-container {
+    flex-direction: column;
+  }
+  .submit-box-content {
+    width: 100%;
+  }
+}
