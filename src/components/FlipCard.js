@@ -3,7 +3,7 @@ import React from "react";
 export default function FlipCard() {
   return (
     <>
-      <img className="text-style-sm" src="/assets/img/bg/text-sm.png" />
+      {/* <img className="text-style-sm" src="/assets/img/bg/text-sm.png" />
       <div className="flip-wrapper">
         <div className="flip-card-container">
           <div className="content-container">
@@ -113,8 +113,8 @@ export default function FlipCard() {
               );
             }
           })}
-        </div>
-      </div>
+        </div> */}
+      {/* </div> */}
     </>
   );
 }
