@@ -8,7 +8,7 @@ import { useEffect, useRef } from "react";
 //   return { title: `product ${params?.productId}` };
 // }
 
-export default function contact({ params }) {
+export default function Contact({ params }) {
   const container = useRef();
   const tl = useRef();
   gsap.registerPlugin(ScrollTrigger);

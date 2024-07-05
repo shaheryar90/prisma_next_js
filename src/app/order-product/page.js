@@ -3,7 +3,7 @@
 import { useRouter } from "next/navigation";
 import React from "react";
 
-export default function orderProduct() {
+export default function OrderProduct() {
   const router = useRouter();
   const handleClick = () => {
     alert("Order placed successfully");

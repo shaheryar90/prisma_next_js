@@ -6,7 +6,7 @@ import { useEffect, useRef } from "react";
 //   return { title: `product ${params?.productId}` };
 // }
 
-export default function productDetails({ params }) {
+export default function ProductDetails({ params }) {
   const container = useRef();
   const tl = useRef();
 

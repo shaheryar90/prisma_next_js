@@ -6,7 +6,7 @@ import { gsap } from "gsap";
 
 import { Flip } from "gsap/Flip";
 gsap.registerPlugin(Flip);
-export default function login() {
+export default function Login() {
   const frontRef = useRef(null);
   const backRef = useRef(null);
 
