@@ -19,8 +19,11 @@
     "scss": "^0.2.4"
   },
   "devDependencies": {
-    "eslint": "^8",
+    "eslint": "^8.57.0",
     "eslint-config-next": "14.2.4",
+    "eslint-plugin-next": "^0.0.0",
+    "eslint-plugin-react": "^7.34.3",
+    "eslint-plugin-react-hooks": "^4.6.2",
     "prisma": "^5.16.1"
   },
   "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
