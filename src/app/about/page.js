@@ -1,14 +1,15 @@
-import Footer from "@/app/components/Footer";
+// import Footer from "@/app/components/Footer";
 
-export const metadata = {
-  title: "About codevolution",
-};
+// export const metadata = {
+//   title: "About codevolution",
+// };
 
 export default function about() {
   return (
     <div>
-      <p>About</p>
-      <Footer />
+      <p style={{ color: "black" }}>About</p>
+      <h3>sdkajskldjaskldjaskl</h3>
+      {/* <Footer /> */}
     </div>
   );
 }

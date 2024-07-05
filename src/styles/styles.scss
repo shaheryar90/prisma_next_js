@@ -3,6 +3,10 @@
 @import "./global/variables.scss";
 @import "./global/mixins.scss";
 @import "./global/global.scss";
+@import "./login.scss";
+@import "./register.scss";
+@import "./forgot-password.scss";
+@import "./contact.scss";
 
 // import scss files (for Components)
 @import "components/header";

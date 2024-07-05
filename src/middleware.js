@@ -8,7 +8,7 @@ export function middleware(req) {
   let url = req.url;
 
   // List of protected paths
-  const protectedPaths = ["/dashboard", "/blog", "/products"];
+  const protectedPaths = ["/dashboard", "/blog"];
 
   // Check if the requested URL includes any of the protected paths
   const isProtectedPath = protectedPaths.some((path) => url.includes(path));
