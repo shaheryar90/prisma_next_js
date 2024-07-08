@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { comments } from "./data";
-const { PrismaClient } = require("@prisma/client");
+import { PrismaClient } from "../prisma/generated/clientPg";
 const prisma = new PrismaClient();
 export async function GET() {
   // return Response.json(comments);
