@@ -3,7 +3,7 @@
 import { redirect } from "next/navigation";
 import { comments } from "../data";
 import { headers } from "next/headers";
-import { PrismaClient } from "../prisma/generated/clientPg";
+const { PrismaClient } = require("@prisma/client");
 const prisma = new PrismaClient();
 // export async function GET(request, { params }) {
 //   //   if (parseInt(params.id) > comments.length) {
